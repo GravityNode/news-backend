@@ -1,13 +1,13 @@
 import { Controller, Get, Post, Body } from '@nestjs/common';
 import { AppService } from './app.service';
-import { UserService } from './user.service';
-import { User } from '@prisma/client';
+// import { UserService } from './user.service';
+// import { User } from '@prisma/client';
 
 @Controller()
 export class AppController {
   constructor(
     private readonly appService: AppService,
-    private readonly userService: UserService,
+    // private readonly userService: UserService,
   ) {}
 
   @Get()
