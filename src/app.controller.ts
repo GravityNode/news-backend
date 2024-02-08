@@ -15,15 +15,15 @@ export class AppController {
     return this.appService.getHello();
   }
 
-  @Post('users')
-  async createUser(
-    @Body() data: { name: string; email: string; image: string },
-  ): Promise<User> {
-    return this.userService.createUser(data);
-  }
+  // @Post('users')
+  // async createUser(
+  //   @Body() data: { name: string; email: string; image: string },
+  // ): Promise<User> {
+  //   return this.userService.createUser(data);
+  // }
 
-  @Get('users')
-  async getUsers(): Promise<User[]> {
-    return this.userService.getUsers();
-  }
+  // @Get('users')
+  // async getUsers(): Promise<User[]> {
+  //   return this.userService.getUsers();
+  // }
 }
